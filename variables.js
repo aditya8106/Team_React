@@ -23,7 +23,11 @@ console.log(name);
 const pi=3.14;
 console.log(pi);
 // pi=3.1415; // error
-const  a=5;
+const  a=5;  
 const  b=10;
- [a,b]=[b,a];
+ [a,b]=[b,a]; /// error const cannot be reassigned  
 console.log(a,b);
+let  a2=5;
+let  b2=10;
+ [a2,b2]=[b2,a2];
+console.log(a2,b2);
