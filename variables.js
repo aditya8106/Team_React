@@ -31,3 +31,9 @@ let  a2=5;
 let  b2=10;
  [a2,b2]=[b2,a2];
 console.log(a2,b2);
+
+let name = "adityA";
+console.log(name);
+///let name2 = "ADITYA "s phone number is 1234567890"; /// error
+let name2 = "ADITYA 's phone number is 1234567890";
+console.log(name2);
