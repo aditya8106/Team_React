@@ -20,20 +20,20 @@ if (true){
 }
 console.log(name);
 
-const pi=3.14;
-console.log(pi);
+//const pi=3.14; /// constant variable 
+//console.log(pi);
 // pi=3.1415; // error
-const  a=5;  
-const  b=10;
- [a,b]=[b,a]; /// error const cannot be reassigned  
-console.log(a,b);
+//const  a=5;  
+//const  b=10;
+ ///[a,b]=[b,a]; /// error const cannot be reassigned  
+//console.log(a,b);
 let  a2=5;
 let  b2=10;
  [a2,b2]=[b2,a2];
 console.log(a2,b2);
 
-let name = "adityA";
-console.log(name);
+let name1 = "adityA";
+console.log(name1);
 ///let name2 = "ADITYA "s phone number is 1234567890"; /// error
 let name2 = "ADITYA 's phone number is 1234567890";
 console.log(name2);
@@ -47,3 +47,12 @@ let user_name = `aditya`; // variable declaration type3
 //let userName = "aditya"; // error variable name cannot be redeclared
 let message = `Hello, ${userName}!.`; /// template literal
 console.log(message);
+
+
+
+
+// small program of variables and constants in JavaScript
+let radius = 5;
+const pi= 3.14; /// constant variable for pi 
+let area = pi * radius ** 2; /// area of circle
+console.log(`Area of circle with radius ${radius} is ${area}.`); /// template literal with expression  
