@@ -29,4 +29,6 @@ function Laptop(cpu, ram, brand,work) {
 const lap1 =  new  Laptop('i9',8,'Lenovo');
 console.log(lap1);
 
+lap1.work();
+
 //// constructor class  or functions doesn't have any return statements 

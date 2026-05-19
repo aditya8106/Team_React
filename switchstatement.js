@@ -40,3 +40,5 @@ switch (day.toLowerCase()) {
     default:
         console.log("Invalid day of the week");
 }
+
+// Output: Today is Thursday
