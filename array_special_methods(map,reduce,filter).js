@@ -42,3 +42,5 @@ console.log(product); // Output: 120 means 1*2*3*4*5 = 120
 // using filter and reduce and for each loop to achieve the same result as reduce method
 let sumOfEvenNumbers = numbers11.filter(number => number % 2 === 0).reduce((accumulator, currentValue) => accumulator + currentValue);
 console.log(sumOfEvenNumbers); // Output: 6 means 2+4 = 6
+let sumproduct = numbers11.filter(number =>number%2===0).map(number => number*number).reduce((a,b)=>a*b);
+console.log(sumproduct);
