@@ -1,39 +1,31 @@
 import React from 'react'
-import {useState} from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import HomeCards from './components/HomeCards'
+import JobListings from './components/JobListings'
 const App = () => {
-  const [count, setCount] = useState(0)
-  const [inputValue, setInputValue] = useState('')
   return (
-    
     <>
-        <div>App</div>
-        <input type="text" placeholder='Enter a value' value={inputValue} onChange={(e) => setInputValue(e.target.value)} 
-      />
 
-      <button onClick={() => {
-        setCount(count + Number(inputValue));
-        setInputValue('');
-      }}>
-        +
-      </button>
+      <Navbar />
+      <Hero />
+      <HomeCards />
+    {/*-- Developers and Employers -->*/}
+    
 
-      <button onClick={() => {
-        setCount(count - Number(inputValue));
-        setInputValue('');
-      }}>
-        -
-      </button>
+    {/*-- Browse Jobs -->*/}
+    <JobListings />
 
-      <button onClick={() => {
-        setCount(0);
-        setInputValue('');
-      }}>
-        Reset 🔁
-      </button>
+    <section class="m-auto max-w-lg my-10 px-6">
+      <a
+        href="jobs.html"
+        class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
+        >View All Jobs</a
+      >
+    </section>
 
-      <h1>{count}</h1>
     </>
-  );
-};
+  )
+}
 
 export default App
