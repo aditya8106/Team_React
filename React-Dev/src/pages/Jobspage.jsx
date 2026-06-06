@@ -1,8 +1,12 @@
 import React from 'react'
+import JobListings from '../components/JobListings'
 
-const Jobspage = () => {
+const Jobspage = ({ isHome = false }) => {
   return (
-    <div>Jobspage</div>
+   <>
+     
+      <JobListings isHome={isHome} />
+   </>
   )
 }
 

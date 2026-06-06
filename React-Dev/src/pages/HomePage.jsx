@@ -5,12 +5,14 @@ import HomeCards from '../components/HomeCards'
 import JobListings from '../components/JobListings'
 import ViewAlljobs from '../components/ViewAlljobs'
 
+
 const HomePage = () => {
+  
   return (
     <div>
       <Hero />
       <HomeCards />
-      <JobListings />
+      <JobListings isHome={true} />
       <ViewAlljobs />
     </div>
   )
