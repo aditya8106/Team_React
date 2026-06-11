@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { useState } from 'react'
 const x = 10 
 const y = 20 
 const z = 30
@@ -14,6 +15,11 @@ const style = {
 
 
 const FirstCode = () => {
+  const [count , setCount] =useState(0)
+  const [val, setVal]   = useState('')
+  const handleCount =() =>{
+      setCount(count+Number(val))
+  }
   return (
     <>
       <h1 className="font-sans text-blue-500 text-4xl ">
@@ -33,6 +39,10 @@ const FirstCode = () => {
         ))}
       </ul> 
       { isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in.</h1>}
+      <div>
+        <input type="text" placeholder='hii' value={val} onChange={e.target.value} />
+        <button onClick={handleCount}>ADD</button>
+      </div>
     </>
   )
 }

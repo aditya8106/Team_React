@@ -10,7 +10,7 @@ const JobListings = ({ isHome = false }) => {
     const fetchJobs = async () => {
       
       try {
-        const response = await fetch('http://localhost:5000/jobs');
+        const response = await fetch('/api/jobs');
         const data = await response.json();
         setRecentJobs(isHome ? data.slice(0,3) :data);
       } catch (error) {
